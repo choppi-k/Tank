@@ -1,15 +1,17 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class EnemyScript : MonoBehaviour {
     int enemyHP = 3;
 
-    public Transform target;
-    private float EnemySpeed = 1.8f;
+    private Transform target;
+    private float EnemySpeed = 2.3f;
 	// Use this for initialization
 	void Start () {
-		
+        GameObject PlayerObject = GameObject.Find("Player");
+        target = PlayerObject.transform;
 	}
 	
 	// Update is called once per frame
@@ -28,6 +30,7 @@ public class EnemyScript : MonoBehaviour {
             if(enemyHP <= 0)
             {
                 Destroy(this.gameObject);
+                Debug.Log("KILL!");
             }
         }
     }
