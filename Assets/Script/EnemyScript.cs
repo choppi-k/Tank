@@ -29,8 +29,10 @@ public class EnemyScript : MonoBehaviour {
             enemyHP -= 1;
             if(enemyHP <= 0)
             {
+                GameObject ScoreObj = GameObject.Find("Score");
+                ScoreObj.SendMessage("Scoreplus");
+
                 Destroy(this.gameObject);
-                Debug.Log("KILL!");
             }
         }
     }

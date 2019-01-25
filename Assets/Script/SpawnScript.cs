@@ -17,7 +17,7 @@ public class SpawnScript : MonoBehaviour {
 
         if(spawntimer <= 0.0)
         {
-            spawntimer = 3.0f;
+            spawntimer = 1.0f;
             Instantiate(EnemyPrefab);
         }
 	}
