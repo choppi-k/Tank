@@ -7,7 +7,7 @@ public class EnemyScript : MonoBehaviour {
     int enemyHP = 3;
 
     private Transform target;
-    private float EnemySpeed = 2.3f;
+    private float EnemySpeed = 2.0f;
 	// Use this for initialization
 	void Start () {
         GameObject PlayerObject = GameObject.Find("Player");
@@ -25,7 +25,7 @@ public class EnemyScript : MonoBehaviour {
         if(col.tag == "tama")
         {
             Destroy(col.gameObject);
-            Debug.Log("hit!");
+            //Debug.Log("hit!");
             enemyHP -= 1;
             if(enemyHP <= 0)
             {
