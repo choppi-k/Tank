@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class DamageScript : MonoBehaviour {
 	// Use this for initialization
@@ -18,6 +19,7 @@ public class DamageScript : MonoBehaviour {
         if (other.gameObject.tag == "Enemy")
         {
             Destroy(other.gameObject);
+            SceneManager.LoadScene("GameOver");
             Debug.Log("GameOver");
         }
     }

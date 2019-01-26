@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 
 public class EnemyScript : MonoBehaviour {
-    int enemyHP = 3;
+    int enemyHP = 2;
 
     private Transform target;
     private float EnemySpeed = 2.0f;
