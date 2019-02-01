@@ -369,7 +369,7 @@ GameObject:
   - component: {fileID: 876488745}
   - component: {fileID: 876488747}
   m_Layer: 5
-  m_Name: MaxScore
+  m_Name: HighScore
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -425,7 +425,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Max Score : 0'
+  m_Text: 'High Score : 0'
 --- !u!222 &876488746
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -750,7 +750,7 @@ GameObject:
   - component: {fileID: 1978970467}
   - component: {fileID: 1978970466}
   m_Layer: 5
-  m_Name: MaxScoreReset
+  m_Name: HighScoreReset
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -806,7 +806,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Press R to reset MaxScore
+  m_Text: Press R to reset HighScore
 --- !u!222 &1978970467
 CanvasRenderer:
   m_ObjectHideFlags: 0
