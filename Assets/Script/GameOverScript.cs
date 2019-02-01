@@ -12,6 +12,11 @@ public class GameOverScript : MonoBehaviour {
 	void Start () {
         this.NowScoreText = this.GetComponent<Text>();
         this.NowScoreText.text = "Score : " + PlayerPrefs.GetInt("score");
+
+        if(PlayerPrefs.GetInt("MaxScore") <= PlayerPrefs.GetInt("score"))
+        {
+            PlayerPrefs.SetInt("MaxScore", PlayerPrefs.GetInt("score"));
+        }
     }
 	
 	// Update is called once per frame
