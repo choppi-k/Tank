@@ -18,8 +18,10 @@ public class DamageScript : MonoBehaviour {
     {
         if (other.gameObject.tag == "Enemy")
         {
-            Destroy(other.gameObject);
-            SceneManager.LoadScene("GameOver");
+            GameObject ScoreObj = GameObject.Find("Score");
+            ScoreObj.SendMessage("NowScoreSave");
+
+            SceneManager.LoadScene("GameOver"); 
             Debug.Log("GameOver");
         }
     }
