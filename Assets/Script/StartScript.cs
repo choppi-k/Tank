@@ -26,5 +26,11 @@ public class StartScript : MonoBehaviour {
 
         this.MaxScoreText = this.GetComponent<Text>();
         this.MaxScoreText.text = "MaxScore : " + PlayerPrefs.GetInt("MaxScore");
+
+        if (Input.GetKeyDown(KeyCode.G))
+        {
+            Cursor.lockState = CursorLockMode.None;
+            Cursor.visible = true;
+        }
     }
 }

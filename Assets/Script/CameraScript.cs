@@ -13,6 +13,7 @@ public class CameraScript : MonoBehaviour {
         verRot = transform.parent;//親を入れる
         horRot = GetComponent<Transform>();//transformの値を入れる
         Cursor.lockState = CursorLockMode.Locked;//マウスカーソルの固定
+        Cursor.visible = false;//カーソルを見えなくする
     }
 
     void Update()
@@ -26,6 +27,7 @@ public class CameraScript : MonoBehaviour {
         if (Input.GetKeyDown(KeyCode.H))
         {
             Cursor.lockState = CursorLockMode.Locked;//Hボタンでいつでもカーソルの固定
+            Cursor.visible = false;
         }
     }
 }
