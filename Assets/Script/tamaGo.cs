@@ -14,6 +14,13 @@ public class tamaGo : MonoBehaviour {
         Vector3 force;
         force = housin.transform.forward * tamaSpeed;
         rb.AddForce(force);
+        Invoke("DestroyTiming", 4.9f);
+    }
+
+    void DestroyTiming()
+    {
+        GameObject ScoreObj = GameObject.Find("Score");
+        ScoreObj.SendMessage("Scoreminus");
     }
 	
 	// Update is called once per frame
