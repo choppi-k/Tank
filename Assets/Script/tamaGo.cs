@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class tamaGo : MonoBehaviour {
-    float tamaSpeed = 500f;
+    float tamaSpeed = 1000f;
     Rigidbody rb;
     public GameObject housin;
     // Use this for initialization
